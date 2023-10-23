@@ -14,7 +14,15 @@ RUN apk add --no-cache chromium
 
 ENV PUPPETEER_SKIP_DOWNLOAD=true
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
-
+# Set environment variables for customization
+ENV LANGCHAIN_TRACING_V2=true
+ENV LANGCHAIN_ENDPOINT=https://api.smith.langchain.com
+ENV LANGCHAIN_API_KEY=your_api_key
+ENV LANGCHAIN_PROJECT=your_project
+ENV DEBUG=true
+ENV LOG_LEVEL=debug 
+ENV TOOL_FUNCTION_BUILTIN_DEP=crypto,fs
+ENV TOOL_FUNCTION_EXTERNAL_DEP=moment,lodash 
 WORKDIR /usr/src/packages
 
 EXPOSE 3000
