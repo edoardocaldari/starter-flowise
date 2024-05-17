@@ -1,9 +1,3 @@
-# Build local monorepo image
-# docker build --no-cache -t  flowise .
-
-# Run image
-# docker run -d -p 3000:3000 flowise
-
 FROM flowiseai/flowise:latest
 RUN apk add --update libc6-compat python3 make g++
 # needed for pdfjs-dist
