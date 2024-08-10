@@ -10,7 +10,7 @@ Add Flowise to your Restack workspace and deploy it instantly on Restack cloud o
 
 ### Generating a preview environment
 
-1. Make sure to fork this repository.
+1. Make sure to fork this repository...
 2. Follow steps in the [official Restack documentation](https://www.restack.io/docs/flowise)
 3. Once you open a pull request a preview environment will be generated.
 4. Once your pull request is merged your initial Flowise application will be provisioned with latest code from the "main" branch.
